@@ -13,6 +13,7 @@ import { LOCALE_ID } from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
 
 
 registerLocaleData(localePt);
@@ -30,6 +31,7 @@ registerLocaleData(localePt);
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    SharedModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
